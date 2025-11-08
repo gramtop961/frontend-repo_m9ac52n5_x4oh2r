@@ -1,0 +1,61 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 252 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.21.17:3000/
+7:50:24 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/CurlInput.jsx:40:55: ERROR: Expected ">" but found "vnd"
+7:50:25 PM [vite] ✨ new dependencies optimized: lucide-react
+7:50:25 PM [vite] ✨ optimized dependencies changed. reloading
+7:50:26 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/CurlInput.jsx:40:55: ERROR: Expected ">" but found "vnd"
+7:50:27 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/CurlInput.jsx:40:55: ERROR: Expected ">" but found "vnd"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/CurlInput.jsx:40:55
+  
+  Expected ">" but found "vnd"
+  38 |              value={curl}
+  39 |              onChange={(e) => setCurl(e.target.value)}
+  40 |              placeholder="curl -H \"Accept: application/vnd.github+json\" https://api.github.com/repos/vercel/next.js/commits?per_page=50"
+     |                                                         ^
+  41 |              rows={3}
+  42 |              className="w-full rounded-lg border border-gray-300 p-3 font-mono text-sm focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none"
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+7:50:55 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/CurlInput.jsx:40:55: ERROR: Expected ">" but found "vnd"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/CurlInput.jsx:40:55
+  
+  Expected ">" but found "vnd"
+  38 |              value={curl}
+  39 |              onChange={(e) => setCurl(e.target.value)}
+  40 |              placeholder="curl -H \"Accept: application/vnd.github+json\" https://api.github.com/repos/vercel/next.js/commits?per_page=50"
+     |                                                         ^
+  41 |              rows={3}
+  42 |              className="w-full rounded-lg border border-gray-300 p-3 font-mono text-sm focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none"
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
