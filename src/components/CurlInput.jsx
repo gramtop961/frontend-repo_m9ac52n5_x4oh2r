@@ -4,7 +4,7 @@ import { Terminal, Play } from 'lucide-react';
 function extractUrlFromCurl(curl) {
   try {
     // Try to find first http(s) URL possibly wrapped in quotes
-    const match = curl.match(/https?:\/\/[\w\-.:/?#@%&=+,;~()*'!]+/i);
+    const match = curl.match(/https?:\/\/[\w\-.:\/?#@%&=+,;~()*'!]+/i);
     return match ? match[0] : '';
   } catch {
     return '';
@@ -20,7 +20,7 @@ export default function CurlInput({ onExecute }) {
     const url = extractUrlFromCurl(curl);
     if (!url) return;
 
-    const headers = { 'Accept': 'application/vnd.github+json' };
+    const headers = { Accept: 'application/vnd.github+json' };
     if (token.trim()) headers['Authorization'] = `Bearer ${token.trim()}`;
 
     onExecute({ url, headers });
@@ -37,7 +37,7 @@ export default function CurlInput({ onExecute }) {
           <textarea
             value={curl}
             onChange={(e) => setCurl(e.target.value)}
-            placeholder="curl -H \"Accept: application/vnd.github+json\" https://api.github.com/repos/vercel/next.js/commits?per_page=50"
+            placeholder='curl -H "Accept: application/vnd.github+json" https://api.github.com/repos/vercel/next.js/commits?per_page=50'
             rows={3}
             className="w-full rounded-lg border border-gray-300 p-3 font-mono text-sm focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none"
           />
